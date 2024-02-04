@@ -1,0 +1,14 @@
+.blockHeader {
+    padding: 20px 30px;
+    &--title {
+        font-size: 26px;
+        line-height: 1.5;
+        text-align: right;
+        font-style: italic;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.644);
+        @media (max-width: $media-4) {
+            text-align: center;
+        }
+    }
+}

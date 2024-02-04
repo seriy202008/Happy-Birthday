@@ -1,0 +1,40 @@
+.wishes {
+    background-color: $bg;
+    padding-bottom: 60px;
+    &--container {
+        display: flex;
+        flex-direction: column;
+    }
+    &--body {
+        align-self: center;
+        width: 900px;
+        @media (max-width: $media-3) {
+            width: 100%;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &--text {
+        font-size: 48px;
+        font-family: $title;
+        @media (max-width: $media-4) {
+            font-size: 32px;
+        }
+        @media (max-width: $media-5) {
+            font-size: 24px;
+        }
+        &-margin {
+            margin-left: 80px;
+            @media (max-width: $media-3) {
+                margin-left: 0;
+            }
+        }
+        &-dmargin {
+            margin-left: 160px;
+            @media (max-width: $media-3) {
+                margin-left: 0;
+            }
+        }
+    }
+}
